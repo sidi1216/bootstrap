@@ -21,7 +21,7 @@ body {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* id tag */
@@ -34,11 +34,12 @@ body {
 #features {
   padding: 7% 15%;
   text-align:center;
-
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ef8172;
   color: #fff;
@@ -83,8 +84,23 @@ body {
 
 /* Title Image  */
 .title-image {
-  width: 60%;
+  width: 15%;
   transform: rotate(20deg);
+  position: absolute;
+  right: 20%;
+}
+
+@media (max-width: 1000px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
 }
 
 .feature-font {
@@ -109,4 +125,50 @@ body {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/* carousel seciotn */
+.carousel-item {
+  padding: 7% 15%;
+}
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+  font-family: "Montserrat-Bold"
+}
+
+.prcing-col {
+  padding: 3% 2%;
+}
+
+/* cta seciton */
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 7% 15%;
+}
+
+.cta-header {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* footer section */
+#footer {
+  background-color: #fff;
+  text-align:center;
+  color: black;
+  padding: 7% 15%;
+}
+
+.footer-icon {
+  margin: 0 0.5% 1%;
+}
+
+.foot-text {
+  color: grey;
+  font-size: 1rem;
 }
